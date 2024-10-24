@@ -1,0 +1,14 @@
+<a href="{% url  'create-book' %}"> create new book</a>
+
+<br>
+<br>
+<br>
+
+{% for book in books %}
+    <a href="{% url 'detail-book' book.id %}">{{book.title}}</a>  
+
+    
+    <br/>
+{%endfor%}
+
+</form>

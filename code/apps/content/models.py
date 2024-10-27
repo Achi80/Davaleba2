@@ -9,5 +9,6 @@ class Book(models.Model):
     created_at = models.DateTimeField(default=datetime.now)
     like_count = models.IntegerField(default=0)
 
+
     def __str__(self) -> str:
         return f"{self.title} - {self.author}"

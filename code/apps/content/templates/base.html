@@ -6,8 +6,7 @@
 
 {% for book in books %}
     <a href="{% url 'detail-book' book.id %}">{{book.title}}</a>  
-
-    
+    <a href="{% url 'delete-book' book.id %}">     delete</a>  
     <br/>
 {%endfor%}
 

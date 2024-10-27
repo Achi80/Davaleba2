@@ -7,7 +7,7 @@ written_date: {{ book.written_date }}
 like_count: {{ book.like_count }}
 
 <br>
-
+<a href="{% url 'update-book' book.id %}"> udpate</a>
 <br>
 
 <a href="{% url 'home' %}"> go back</a>
